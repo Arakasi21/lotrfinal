@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>The Shire</title>
+  <meta charset="UTF-8">
+
+  <!-- Подключение css стилей -->
+
+  <link rel="icon" type="image/x-icon" href="../img/icon.ico">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="image-zoom.css">
+
+  <!-- Бутстрап -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+  <!-- Подключение библиотеки анимации -->
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Подключение font awesome icons -->
+
+  <script src="https://kit.fontawesome.com/cd561888ac.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="kingd">
+
+  <!-- Header -->
+  <div class="headerz" style="background-image:url('headers/shire.png'); background-color: #280033;">
+    <h1 style="color:white;">Shire</h1>
+  </div>
+
+  <!-- НАВБАР МЕНЮ -->
+
+  <nav class="navbar navbar-expand-lg" style="background-color:  #280033">
+    <div class="container-fluid">
+      <div data-aos="fade-right" data-aos-duration="900">
+        <img src="../img/icon.ico" width="40" height="35">
+      </div>
+      <button class="navbar-toggler" onclick="audiolistkng.play();" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><div class="rotateicon"><i class="fa fa-hand-o-right" aria-hidden="true"></i></div></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+        <!-- Левая часть навбара -->
+        <div data-aos="fade-right" data-aos-duration="900">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html"> <i class="fa fa-shield" aria-hidden="true"></i> Kingdoms</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../author.html"> <i class="fa fa-book" aria-hidden="true"></i> Author</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Правая часть навбара -->
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../our_team.html"><i class="fa fa-users" aria-hidden="true"></i> Our Team</a>
+          </li>
+        </ul>
+      </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row text-center">
+      <!--ЛЕВАЯ ЧАСТЬ-->
+      <div class="col-3" style="background-color: #e9ddc7; border-right: 2px solid black;">
+        <!-- ФЛАГ -->
+        <h2 data-aos="fade-right" data-aos-duration="1000">Flag</h2>
+        <div  onclick="whoosh.play();"  style="border-radius: 2px; border: 2px solid #88A270;"><img src="flags/hobbiton.png" class="img-fluid"></div>
+        <h5 data-aos="fade-right" data-aos-duration="1000">flag of peaceful and kind hobbits</h5>
+
+        <!-- КАРТА -->
+        <div data-aos="fade-right" data-aos-duration="1200">
+          <h2>Map</h2>
+          <div  onclick="zoommap.play();" style="border-radius: 2px; border: 2px solid #88A270;"><img src="maps/shiremap.png" id="imageZoom" class="img-fluid"></div>
+          <h5>the homeland of the majority of the hobbits in Middle-earth. It was located in the northwestern portion of Middle-earth, in the northern region of Eriador, within the borders of the Kingdom of Arnor.</h5>
+        </div>
+        <!-- ПРАВАЯ ЧАСТЬ -->
+      </div>
+      <div class="col-9" style="background-color: #D3AC6E;">
+        <br>
+        <div data-aos="fade-up" data-aos-duration="1000">
+
+          <h2>History of Shire</h2>
+          <hr class="style-eight">
+          <h5>Founded/Built : TA 1601 - ? </h5>
+          <hr class="style-eight">
+          <br>
+        </div>
+        <div  onclick="whoosh.play();" ><img src="img/shire.png" class="img-fluid"></div>
+        <div data-aos="fade-up" data-aos-duration="1100">
+
+          <br>
+          <h2>Third Age and beyond</h2>
+          <hr class="style-eight">
+          <p>The Shire's history was mostly peaceful, but as Sauron's return neared evil began to return to Eriador. In TA 2747 a band of Orcs led by Golfimbul invaded the Shire and were met and defeated by Bandobras Took at the Battle of Greenfields. In TA 2912 White Wolves attacked Eriador during a terrible winter, leading to famine and the death of many Hobbits. The Shire's peace was next disturbed by events stemming from Bilbo Baggins' acquisition of the One Ring. In SR 1418 the Shire was first visited by the nine Ringwraiths who went as far as Hobbiton, after which it was enslaved by Saruman via his puppet Lotho Sackville-Baggins. It was liberated with the help of Frodo, Sam, Merry and Pippin after the end of the Quest of the Ring. After Aragorn's return as the King of Arnor and Gondor, the Shire became a protected enclave inside the Reunited Kingdom. Aragorn soon thereafter issued an edict that forbade the entrance of Men into the Shire and confirmed the settlement of Buckland. In FO 31 Aragorn granted the Westmarch to the Hobbits.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Кнопка вверх -->
+
+  <div onclick="scrollToTop()" id="myBtn" class="scrollTop" data-aos="zoom-in"><i class="fa fa-arrow-up">  </i></div>
+
+  <!-- footer -->
+  <div class="container-fluid text-center p-3" id="phrase" style="word-break: break-all; background-color:#2B2D2F; color:gold  ">
+    <p class="text-center">Made with <i class="fa fa-heart"> </i> for LOTR Universe!</p>
+  </div>
+
+  <!-- ПОДКЛЮЧЕНИЕ JS / SCRIPT / JQUERY И ДРУГИХ БИБЛИОТЕК -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <script src="../js/jquery.min.js"></script>
+
+  <script src="../js/zooming.min.js"></script>
+
+  <script src="../js/image-zoom.js" type="text/javascript"></script>
+
+  <!-- Подключение плавного скролла -->
+  <script src="../js/scroll.js">
+  </script>
+
+  <script>
+    $(document).ready(function() {
+      $('#imageZoom').imageZoom();
+    });
+  </script>
+
+  <script>
+    new Zooming().listen('img')
+  </script>
+
+  <!-- Инициализация библиотеки AOS -->
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+</html>

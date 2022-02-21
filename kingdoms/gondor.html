@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Gondor</title>
+    <meta charset="UTF-8">
+
+    <!-- Подключение css стилей -->
+
+    <link rel="icon" type="image/x-icon" href="../img/icon.ico">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="image-zoom.css">
+
+    <!-- Бутстрап -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <!-- Подключение библиотеки анимации -->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Подключение font awesome icons -->
+
+    <script src="https://kit.fontawesome.com/cd561888ac.js" crossorigin="anonymous"></script>
+
+  </head>
+
+  <body class="kingd">
+    <!-- Header -->
+
+    <div class="headerz" style="background-image:url('headers/gondor.png'); background-color: #280033;">
+      <h1 style="color:black;">Gondor</h1>
+    </div>
+
+    <!-- НАВБАР МЕНЮ -->
+
+    <nav class="navbar navbar-expand-lg" style="background-color:  #280033">
+      <div class="container-fluid">
+        <div data-aos="fade-right" data-aos-duration="900">
+          <img src="../img/icon.ico" width="40" height="35">
+        </div>
+        <button class="navbar-toggler" onclick="audiolistkng.play();" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"><div class="rotateicon"><i class="fa fa-hand-o-right" aria-hidden="true"></i></div></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+          <!-- Левая часть навбара -->
+          <div data-aos="fade-right" data-aos-duration="900">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html"> <i class="fa fa-shield" aria-hidden="true"></i> Kingdoms</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../author.html"> <i class="fa fa-book" aria-hidden="true"></i> Author</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Правая часть навбара -->
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../our_team.html"><i class="fa fa-users" aria-hidden="true"></i> Our Team</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row text-center">
+
+        <!--ЛЕВАЯ ЧАСТЬ-->
+
+        <div class="col-3" style="background-color: #e9ddc7; border-right: 2px solid black;">
+
+          <!-- ФЛАГ -->
+
+          <h2 data-aos="fade-right" data-aos-duration="1000">Flag</h2>
+
+          <div   onclick="whoosh.play();" style="border-radius: 2px; border: 2px solid #88A270;"><img src="flags/gondor.png" data-action="zoom" class="img-fluid"></div>
+
+          <h5 data-aos="fade-right" data-aos-duration="1000">The White Tree of Gondor, originally planted in Minas Tirith by Isildur, was a symbol and coat of arms of Gondor</h5>
+          <!-- КАРТА -->
+          <div data-aos="fade-right" data-aos-duration="1200">
+            <h2>Map</h2>
+            <div onclick="zoommap.play();" style="border-radius: 2px; border: 2px solid #88A270;"><img src="maps/gondormap.png" id="imageZoom" class="img-fluid"></div>
+            <h5>Gondor lies in the west of Middle-earth, on the northern shores of Anfalas and the Bay of Belfalas  with the great port of Pelargir near the river Anduin's delta in the fertile and populous  region of Lebennin, stretching up to the White Mountains</h5>
+          </div>
+        </div>
+
+        <!-- ПРАВАЯ ЧАСТЬ -->
+        <div class="col-9" style="background-color: #D3AC6E;">
+
+          <div data-aos="fade-up" data-aos-duration="1000">
+
+            <br>
+            <h2>History of Minas Tirith</h2>
+            <hr class="style-eight">
+            <h5>Founded/Built SA 3320 - ?</h5>
+            <hr class="style-eight">
+            <br>
+          </div>
+          <div  onclick="whoosh.play();"  ><img src="img/minas.png" class="img-fluid"></div>
+          <div data-aos="fade-up" data-aos-duration="1100">
+
+            <br>
+            <h2>Minas Tirith at the Third Age</h2>
+
+            <hr class="style-eight">
+
+            <p>The might of Gondor would decline into the late Third Age, and although the White Tower was rebuilt by Ecthelion I in the year TA 2698, the White Tree died in the year TA 2872 with no replacement. After Sauron openly declared himself in the year TA 2951, Ecthelion II strengthened the city's defences. Only a few years later, Aragorn travelled to the city under the alias of Thorongil, and was said to have done great deeds there.[2] By the time of the War of the Ring the city was in decline, with many houses uninhabited and the city less than half populated.</p>
+            <hr class="style-eight">
+          </div>
+          <div  onclick="whoosh.play();"><img src="img/minassiege.png" class="img-fluid"></div>
+
+          <div data-aos="fade-up" data-aos-duration="1200">
+
+            <br>
+            <h2>Siege of Minas Tirith</h2>
+
+            <hr class="style-eight">
+
+            <p>Minas Tirith was eventually, during the War of the Ring in the year TA 3019, besieged by the armies of Mordor, under the Great Darkness generated by Sauron's power. Prior to the assault the Rammas Echor wall was put back into repair, work being completed on the last section facing North with only days to spare. Most of the women, children and the old were evacuated in the week before the invasion and the city was fully provisioned for a long siege. The Siege of Gondor began with the assault on Gondor's outer defenses. When these fell and when Denethor II's son Faramir was brought back severely wounded, the Steward fell into despair and played no further part in the city's defense. The immense Battle of the Pelennor Fields took place in the fields surrounding the city. Although Gondor and its allies were victorious, Théoden, the King of Rohan, was mortally wounded during this battle by the Witch-king of Angmar. At about the same time, the Witch-king was destroyed by Éowyn, lady of Rohan. Aragorn later arrived at the hour of need with an army from southern Gondor, which he had released by defeating the Corsairs of Umbar, turning the tide of battle in favor of the Free Peoples. After the battle, the Pelennor Fields lay strewn with bodies, the Great Gate of Minas Tirith was broken and the first circle of the city much damaged by fire.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Кнопка вверх -->
+
+    <div onclick="scrollToTop()" id="myBtn" class="scrollTop" data-aos="zoom-in"><i class="fa fa-arrow-up">  </i></div>
+
+    <!-- footer -->
+    <div class="container-fluid text-center p-3" id="phrase" style="word-break: break-all; background-color:#2B2D2F; color:gold  ">
+      <p class="text-center">Made with <i class="fa fa-heart"> </i> for LOTR Universe!</p>
+    </div>
+
+    <!-- ПОДКЛЮЧЕНИЕ JS / SCRIPT / JQUERY И ДРУГИХ БИБЛИОТЕК -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="../js/jquery.min.js"></script>
+
+    <script src="../js/zooming.min.js"></script>
+
+    <script src="../js/image-zoom.js" type="text/javascript"></script>
+
+    <!-- Подключение плавного скролла -->
+    <script src="../js/scroll.js">
+    </script>
+
+    <script>
+      $(document).ready(function() {
+        $('#imageZoom').imageZoom();
+      });
+    </script>
+
+    <script>
+      new Zooming().listen('img')
+    </script>
+
+    <!-- Инициализация библиотеки AOS -->
+    <script>
+      AOS.init();
+    </script>
+
+  </body>
+
+</html>
